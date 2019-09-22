@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>БИБОСС</title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+    <div class="content">
+        <div class="banner">
+            <div class="banner__text-box">
+                <h3 class="text-center">Поставь ссылку на БИБОСС</h3>
+                <h1 class="text-center">Заработай баллы!</h1>
+            </div>
+        </div>
+        <div class="screen">
+            <img src="img/screen.png" alt="Image" class="screen__image">
+            <div class="screen__link-wrap">
+                <a href="#" class="screen__link text-center">Франшиза Dunkin' Donuts на БИБОСС</a>
+            </div>
+        </div>
+        <div class="offer main-padding mr-bottom">
+            <p>БИБОСС дает возможность получить бесплатные баллы - нужно лишь разместить на сайте компании любую из ссылок.</p>
+            <ul>
+                <li>Текстовая ссылка "Франшиза <a href="#">[Название]</a> на БИБОСС"</li>
+                <li>Текстовая ссылка "Наша франшиза на БИБОСС"</li>
+                <li>Кнопка "Нравится франшиза" + счетчик популярности</li>
+            </ul>
+        </div>   
+        <div class="why main-margin mr-bottom">
+            <h3 class="text-center">Зачем нужны <span>баллы</span>?</h3>
+            <h2 class="text-center">Больше баллов - выше позиция в выдаче категории</h2>
+        </div>
+        <div class="rules row main-padding">
+            <div class="rules__left col-lg-6 mr-bottom">
+                <h2 class="mr-bottom">Правила размещения ссылки</h2>
+                <ul>
+                    <li>Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt;)</li>
+                    <li>Ссылка должна быть читаемой, не скрытой от глаз посетителей сайта</li>
+                    <li>Ссылка должна быть размещена на странице сайта, посвященной франчайзингу</li>
+                    <li>При размещении ссылок на другие порталы о франчайзинге - баллы обнуляются</li>
+                </ul>
+            </div>
+            <div class="rules__right col-lg-6 mr-bottom">
+                <h2 class="mr-bottom">Стоимость ссылки</h2>
+                <div class="rules__value mr-bottom">
+                    <h1>200 баллов</h1>
+                    <p>ТиЦ Вашего сайта от 10</p>
+                </div>
+                <div class="rules__value">
+                    <h1>50 баллов</h1>
+                    <p>ТиЦ Вашего сайта от 0 до 10</p>
+                </div>
+            </div>
+        </div>
+        <div class="form  main-margin mr-bottom">
+            <h2 class="text-center mr-bottom">Получить ссылку</h2>
+            <form action="">
+                <div class="form-group row">
+                    <label for="inputName" class="col-lg-4 col-form-label">Ваше имя</label>
+                    <div class="col-lg-8">
+                        <input name="name" type="text" class="form-control-lg" id="inputName" placeholder="Представьтесь, пожалуйста" required minlength=2>
+                        <!-- <div class="invalid-feedback">Укажите Ваше имя</div> -->
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputTel" class="col-lg-4 col-form-label">Номер телефона</label>
+                    <div class="col-lg-8">
+                        <input name="phone" type="tel" class="form-control-lg" id="inputTel" placeholder="Для начисления баллов и связи с Вами" required inputmode="numeric" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                        <!-- <div class="invalid-feedback">Укажите правильный телефон</div> -->
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputFran" class="col-lg-4 col-form-label">Название франшизы</label>
+                    <div class="col-lg-8">
+                        <input name="company" type="text" class="form-control-lg" id="inputFran" list="companies" placeholder="Например, Subway" required>
+                        <datalist id="companies">
+                            <option value="Проворный ткачик"></option>
+                            <option value="ПРОФИ-СПОРТ"></option>
+                            <option value="Проспект"></option>
+                            <option value="Просто чудо"></option>
+                            <option value="Прокат пони+"></option>
+                        </datalist>
+                       <!--  <div class="invalid-feedback">Выберите название из списка</div> -->
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-8">
+                        <button type="submit" class="btn-lg btn-success">Получить ссылку</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="last-text main-padding">
+            <p><span>Это еще не все...</span> Вы можете заработать дополнительные баллы, если разместите на своем сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!</p>
+        </div>
+    </div>
+    <footer class="footer main-padding">
+        <img src="img/favicon.png" alt="Logo">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

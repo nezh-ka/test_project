@@ -1,0 +1,184 @@
+.logo {
+    padding: 2rem $main-gutter;
+
+    
+    @media (max-width: 576px) {
+        padding: 2rem 1rem;
+    }
+}
+
+.banner {
+    background-image: url(../img/user.png);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60vh;
+    background-size: cover;
+    color: $color-white;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+}
+
+.screen {
+    position: relative;
+
+    &__image {
+        position: absolute;
+        height: 50vh;
+        margin-top: -185px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__link {
+        position: absolute;
+        margin-top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        color: $color-purple;
+        font-size: 1.5rem;
+        text-decoration: underline;
+
+        &:active,
+        &:visited,
+        &:hover {
+            color: $color-purple;
+        }
+    }
+
+    @media (max-width: 730px) {
+        &__image {
+            display: none;
+        }
+
+        &__link {
+            background: rgba($color-white, .75);
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+        }
+    }
+}
+
+.offer {
+    margin-top: 170px;
+
+    ul {
+        list-style-position: inside;
+    }
+
+    a, 
+    a:active, 
+    a:visited, 
+    a:hover {
+        color: $color-grey-light3;
+    }
+
+    @media (max-width: 730px) {
+        margin-top: 3.5rem;
+    }
+}
+
+.why {
+    background: $color-grey-light4;
+    padding: 3.5rem 0;
+
+    h3 {
+        margin-bottom: 2rem;
+    }
+
+    span {
+        color: $color-blue;
+        text-decoration: underline;
+    }
+}
+
+.rules {
+
+    &__left {
+
+        ul {
+            list-style-position: inside;
+
+            & li:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &__value {
+        h1 {
+            color: $color-green1;
+            font-weight: bold;
+            font-size: 4rem;
+        }
+    }
+}
+
+.last-text {
+
+    p {
+        margin-bottom: 0 !important;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.form {
+    background: $color-yellow;
+    padding: 5rem;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid $color-grey;
+        border-radius: 5px;
+
+        &::placeholder {
+            color: $color-grey;
+            font-size: 1.4rem;
+        }
+
+        &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+    }
+
+    button {
+        border: 0;
+        font-size: 1.6rem;
+        border-radius: 5px;
+    }
+
+    input.error {
+        border: 1px solid $color-red;
+    }
+
+    label.error {
+        color: $color-red;
+        font-weight: normal;
+        margin-top: 1rem;
+    }
+}
